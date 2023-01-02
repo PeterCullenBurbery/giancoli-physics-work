@@ -1,0 +1,3336 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    143457,       3328]
+NotebookOptionsPosition[    140440,       3274]
+NotebookOutlinePosition[    140881,       3291]
+CellTagsIndexPosition[    140838,       3288]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"GiancoliNotebookNameFromChapter", "//", 
+  "ClearAll"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+   RowBox[{
+    RowBox[{"chapter_", "?", "IntegerQ"}], ",", 
+    RowBox[{"string_", "?", "StringQ"}]}], "]"}], ":=", 
+  RowBox[{"NotebookClose", "[", 
+   RowBox[{"NotebookSave", "[", 
+    RowBox[{
+     RowBox[{"CreateNotebook", "[", 
+      RowBox[{"\"\<ComputationalEssay\>\"", ",", 
+       RowBox[{"Visible", "->", "False"}]}], "]"}], ",", 
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\>\"", ",", 
+        RowBox[{
+         RowBox[{
+         "StringTemplate", "[", 
+          "\"\<Physics-Principles with Applications Douglas C. Giancoli 7th \
+Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter <* \
+IntegerString[#chapter] *>-`string`.nb\>\"", "]"}], "[", 
+         RowBox[{"<|", 
+          RowBox[{
+           RowBox[{"\"\<chapter\>\"", "->", "chapter"}], ",", 
+           RowBox[{"\"\<string\>\"", "->", 
+            RowBox[{"ToUpperCase", "[", 
+             RowBox[{"StringReplace", "[", 
+              RowBox[{"string", ",", 
+               RowBox[{"\"\<: \>\"", "->", "\"\<\[LongDash]\>\""}]}], "]"}], 
+             "]"}]}]}], "|>"}], "]"}]}], "}"}], "]"}]}], "]"}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.88160889186187*^9, 3.8816090199605317`*^9}, {
+   3.8816091193377447`*^9, 3.8816091238564386`*^9}, {3.881609196376989*^9, 
+   3.8816091997520485`*^9}, {3.881609562099732*^9, 3.8816095912834463`*^9}, {
+   3.881610011382201*^9, 3.881610036761099*^9}, 3.881610095950347*^9, {
+   3.8816101956116285`*^9, 3.8816102012940054`*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"fa6b51d1-d42b-4364-9f37-3901d09a20ac"],
+
+Cell[BoxData[
+ RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+  RowBox[{"1", ",", "\"\<Introduction, Measurement, Estimating\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8816093408928585`*^9, 3.8816093537850056`*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"378a6916-a53a-4578-89ee-cda182dfc878"],
+
+Cell[BoxData[
+ RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+  RowBox[{
+  "2", ",", "\"\<Describing Motion: Kinematics in One Dimension\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8816093408928585`*^9, 3.881609398159153*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"30995050-e126-4328-b9d1-1836594554c0"],
+
+Cell[BoxData[
+ RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+  RowBox[{"3", ",", "\"\<Kinematics in Two Dimensions; Vectors\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8816093408928585`*^9, 3.881609398159153*^9}, {
+  3.8816101047785444`*^9, 3.8816101178293867`*^9}},
+ CellLabel->"In[45]:=",ExpressionUUID->"e06d8cf4-f2d9-4499-a20e-9ba1553d3151"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MapThread", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+     RowBox[{"#1", ",", "#2"}], "]"}], "&"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Range", "[", 
+      RowBox[{"4", ",", "33"}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Dynamics: Newton's Laws of Motion\>\"", ",", 
+       "\"\<Circular Motion: Gravitation\>\"", ",", "\"\<Work and Energy\>\"",
+        ",", "\"\<Linear Momentum\>\"", ",", "\"\<Rotational motion\>\"", 
+       ",", "\"\<Static Equilibrium; elasticity and fracture\>\"", ",", 
+       "\"\<fluids\>\"", ",", "\"\<oscillations and waves\>\"", ",", 
+       "\"\<sound\>\"", ",", "\"\<temperature and kinetic energy\>\"", ",", 
+       "\"\<heat\>\"", ",", "\"\<the laws of thermodynamics\>\"", ",", 
+       "\"\<electric charge and electric field\>\"", ",", 
+       "\"\<electric potential\>\"", ",", "\"\<electric currents\>\"", ",", 
+       "\"\<dc circuits\>\"", ",", "\"\<magnetism\>\"", ",", 
+       "\"\<electromagnetic induction and faraday's law\>\"", ",", 
+       "\"\<electromagnetic waves\>\"", ",", 
+       "\"\<light: geometric optics\>\"", ",", 
+       "\"\<the wave nature of light\>\"", ",", "\"\<optical instruments\>\"",
+        ",", "\"\<the special theory of relativity\>\"", ",", 
+       "\"\<early quantum theory and models of the atom\>\"", ",", 
+       "\"\<quantum mechanics of atoms\>\"", ",", 
+       "\"\<molecules and solids\>\"", ",", 
+       "\"\<nuclear physics and radioactivity\>\"", ",", 
+       "\"\<nuclear energy; effects and uses of radiation\>\"", ",", 
+       "\"\<elementary particules\>\"", ",", 
+       "\"\<astrophysics and cosmology\>\""}], "}"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8816101277589226`*^9, 3.8816101760715637`*^9}, {
+  3.8816103160484705`*^9, 3.881610483278693*^9}},
+ CellLabel->"In[50]:=",ExpressionUUID->"e944be86-c739-4fbe-8884-b6335d201b64"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}], ",", 
+   RowBox[{"NotebookClose", "[", "Null", "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8816101815406246`*^9, 3.8816102181209755`*^9, 
+  3.8816105627853794`*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"5d04be85-263e-444f-8d48-7ec0aadba756"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Block", "[", 
+  RowBox[{
+   RowBox[{"{", "nb", "}"}], ",", 
+   RowBox[{
+    RowBox[{"nb", "=", 
+     RowBox[{"CreateNotebook", "[", "\"\<ComputationalEssay\>\"", "]"}]}], 
+    ";", 
+    RowBox[{"NotebookSave", "[", 
+     RowBox[{"nb", ",", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\>\"", ",", 
+         RowBox[{
+          RowBox[{
+          "StringTemplate", "[", 
+           "\"\<Physics-Principles with Applications author Douglas C. \
+Giancoli 7th Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter <* \
+IntegerString[#chapter] *>-`string`.nb\>\"", "]"}], "[", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<chapter\>\"", "->", "2"}], ",", 
+            RowBox[{"\"\<string\>\"", "->", 
+             RowBox[{
+             "ToUpperCase", "[", 
+              "\"\<Describing Motion: Kinematics in One Dimension\>\"", 
+              "]"}]}]}], "|>"}], "]"}]}], "}"}], "]"}]}], "]"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8816094372016473`*^9, 3.8816094741945734`*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"5e4d81fc-babd-4856-99f0-383e4860f97f"],
+
+Cell[BoxData[
+ RowBox[{"Block", "[", 
+  RowBox[{
+   RowBox[{"{", "nb", "}"}], ",", 
+   RowBox[{
+    RowBox[{"nb", "=", 
+     RowBox[{"CreateNotebook", "[", "\"\<ComputationalEssay\>\"", "]"}]}], 
+    ";", 
+    RowBox[{"NotebookSave", "[", 
+     RowBox[{"nb", ",", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "\"\<C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\>\"", ",", 
+         "\"\<test\>\""}], "}"}], "]"}]}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8816095077733183`*^9, 3.8816095088670654`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"656f56f6-9006-4fd7-892e-63d5738f7cca"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "StringTemplate", "[", 
+   "\"\<Physics-Principles with Applications author Douglas C. Giancoli 7th \
+Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter <* \
+IntegerString[#chapter] *>-`string`.nb\>\"", "]"}], "[", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<chapter\>\"", "->", "2"}], ",", 
+    RowBox[{"\"\<string\>\"", "->", 
+     RowBox[{
+     "ToUpperCase", "[", 
+      "\"\<Describing Motion: Kinematics in One Dimension\>\"", "]"}]}]}], 
+   "|>"}], "]"}]], "Input",
+ CellLabel->"In[10]:=",ExpressionUUID->"a8dfded8-eeb0-482f-a4c9-a95b71aea581"],
+
+Cell[BoxData["\<\"Physics-Principles with Applications author Douglas C. \
+Giancoli 7th Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter \
+2-DESCRIBING MOTION: KINEMATICS IN ONE DIMENSION.nb\"\>"], "Output",
+ CellChangeTimes->{3.881609523926757*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"9830b5e0-77a6-48ab-8893-f245314017a1"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+   RowBox[{
+    RowBox[{"chapter_", "?", "IntegerQ"}], ",", 
+    RowBox[{"string_", "?", "StringQ"}]}], "]"}], ":=", 
+  RowBox[{"NotebookSave", "[", 
+   RowBox[{
+    RowBox[{"CreateNotebook", "[", "\"\<ComputationalEssay\>\"", "]"}], ",", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\>\"", ",", 
+       RowBox[{
+        RowBox[{
+        "StringTemplate", "[", 
+         "\"\<Physics-Principles with Applications author Douglas C. Giancoli \
+Chapter <* IntegerString[#chapter] *>-`string`.nb\>\"", "]"}], "[", 
+        RowBox[{"<|", 
+         RowBox[{
+          RowBox[{"\"\<chapter\>\"", "->", "chapter"}], ",", 
+          RowBox[{"\"\<string\>\"", "->", 
+           RowBox[{"ToUpperCase", "[", 
+            RowBox[{"StringReplace", "[", 
+             RowBox[{"string", ",", 
+              RowBox[{"\"\<:\>\"", "->", "\"\<-\>\""}]}], "]"}], "]"}]}]}], 
+         "|>"}], "]"}]}], "}"}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{3.8816096472777147`*^9},
+ CellLabel->"In[18]:=",ExpressionUUID->"ab0a5bc6-9575-4937-b1bc-fd5ee4ba349d"],
+
+Cell[BoxData[
+ RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+  RowBox[{"1", ",", "\"\<Introduction, Measurement, Estimating\>\""}], 
+  "]"}]], "Input",
+ CellLabel->"In[19]:=",ExpressionUUID->"840897a7-4390-4e53-a066-7271c945baf9"],
+
+Cell[BoxData[
+ RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+  RowBox[{
+  "2", ",", "\"\<Describing Motion: Kinematics in One Dimension\>\""}], 
+  "]"}]], "Input",
+ CellLabel->"In[20]:=",ExpressionUUID->"f3205d6a-1b34-4b52-8f7c-5a742a221ea9"],
+
+Cell[BoxData[{
+ RowBox[{"GiancoliNotebookNameFromChapter", "//", 
+  "ClearAll"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+   RowBox[{
+    RowBox[{"chapter_", "?", "IntegerQ"}], ",", 
+    RowBox[{"string_", "?", "StringQ"}]}], "]"}], ":=", 
+  RowBox[{"NotebookSave", "[", 
+   RowBox[{
+    RowBox[{"CreateNotebook", "[", "\"\<ComputationalEssay\>\"", "]"}], ",", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\>\"", ",", 
+       RowBox[{
+        RowBox[{
+        "StringTemplate", "[", 
+         "\"\<Physics-Principles with Applications Douglas C. Giancoli 7th \
+Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter <* \
+IntegerString[#chapter] *>-`string`.nb\>\"", "]"}], "[", 
+        RowBox[{"<|", 
+         RowBox[{
+          RowBox[{"\"\<chapter\>\"", "->", "chapter"}], ",", 
+          RowBox[{"\"\<string\>\"", "->", 
+           RowBox[{"ToUpperCase", "[", 
+            RowBox[{"StringReplace", "[", 
+             RowBox[{"string", ",", 
+              RowBox[{"\"\<:\>\"", "->", "\"\<-\>\""}]}], "]"}], "]"}]}]}], 
+         "|>"}], "]"}]}], "}"}], "]"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.881609708328744*^9, 3.881609708469351*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"44b9f039-a658-44cd-8fe8-f56dbd224d60"],
+
+Cell[BoxData[
+ RowBox[{"GiancoliNotebookNameFromChapter", "[", 
+  RowBox[{
+  "2", ",", "\"\<Describing Motion: Kinematics in One Dimension\>\""}], 
+  "]"}]], "Input",
+ CellLabel->"In[23]:=",ExpressionUUID->"86232ace-92c1-4165-b4bb-b985aa596e78"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  "\"\<C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\>\"", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8816097849414005`*^9, 3.881609792403026*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"3fa2ecd6-5339-4024-9284-0327b10d9d59"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\"\>"], "Output",
+ CellChangeTimes->{3.8816097937780333`*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"0349d4b7-6ab3-4c7c-8ca2-8095f4dea2c7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileSystemTree", "[", 
+  RowBox[{"Directory", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8816097228059015`*^9, 3.8816097596716404`*^9}, {
+  3.881609796091996*^9, 3.8816098154663324`*^9}},
+ CellLabel->"In[26]:=",ExpressionUUID->"2455e136-f4aa-4397-9548-9c424675abad"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["Trees",
+   DynamicModuleBox[{Typeset`tree = HoldComplete[
+     Tree[
+     "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work", <|
+      ".git" -> Tree[
+        "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git", <|
+         "hooks" -> Tree[
+           "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks", <|
+            "applypatch-msg.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\applypatch-\
+msg.sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "commit-msg.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\commit-msg.\
+sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "fsmonitor-watchman.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\fsmonitor-\
+watchman.sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "post-update.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\post-\
+update.sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "pre-applypatch.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-\
+applypatch.sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "pre-commit.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-commit.\
+sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "pre-merge-commit.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-merge-\
+commit.sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "prepare-commit-msg.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\prepare-\
+commit-msg.sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], "pre-push.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-push.\
+sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "pre-rebase.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-rebase.\
+sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "pre-receive.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-\
+receive.sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], 
+             "push-to-checkout.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\push-to-\
+checkout.sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], "update.sample" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\update.\
+sample", None, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "info" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\info", <|
+            "exclude" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\info\\exclude", 
+               None, {TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "logs" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs", <|
+            "refs" -> Tree[
+              "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs", <|
+               "heads" -> 
+                Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\\
+heads", <|"main" -> Tree[
+                    "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\heads\
+\\main", None, {TreeElementLabelFunction -> "FileSystem", 
+                    ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+                  TreeElementLabelFunction -> "FileSystem", 
+                   ParentEdgeLabelFunction -> "FileSystem"}], "remotes" -> 
+                Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\\
+remotes", <|"origin" -> 
+                   Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\\
+remotes\\origin", <|"HEAD" -> 
+                    Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\\
+remotes\\origin\\HEAD", None, {
+                    TreeElementLabelFunction -> "FileSystem", 
+                    ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+                    TreeElementLabelFunction -> "FileSystem", 
+                    ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+                  TreeElementLabelFunction -> "FileSystem", 
+                   ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], "HEAD" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\HEAD", 
+               None, {TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "objects" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects", <|
+            "info" -> Tree[
+              "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects\\info", \
+<||>, {TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+                "FileSystem"}], "pack" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects\\pack", <|
+               "pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.idx" -> 
+                Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects\\pack\\\
+pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.idx", None, {
+                  TreeElementLabelFunction -> "FileSystem", 
+                   ParentEdgeLabelFunction -> "FileSystem"}], 
+                "pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.pack" -> 
+                Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects\\pack\\\
+pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.pack", None, {
+                  TreeElementLabelFunction -> "FileSystem", 
+                   ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "refs" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs", <|
+            "heads" -> Tree[
+              "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\heads", <|
+               "main" -> Tree[
+                 "C:\\Users\\Peter\\OneDrive - Marshall University\\Documents\
+\\GitHub\\giancoli-physics-work\\.git\\refs\\heads\\main", None, {
+                  TreeElementLabelFunction -> "FileSystem", 
+                   ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], "remotes" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\remotes", <|
+               "origin" -> 
+                Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\remotes\\\
+origin", <|"HEAD" -> 
+                   Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\remotes\\\
+origin\\HEAD", None, {
+                    TreeElementLabelFunction -> "FileSystem", 
+                    ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+                  TreeElementLabelFunction -> "FileSystem", 
+                   ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+               TreeElementLabelFunction -> "FileSystem", 
+                ParentEdgeLabelFunction -> "FileSystem"}], "tags" -> 
+             Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\tags", \
+<||>, {TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+                "FileSystem"}]|>, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "config" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\config", None, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "description" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\description", 
+            None, {TreeElementLabelFunction -> "FileSystem", 
+             ParentEdgeLabelFunction -> "FileSystem"}], "FETCH_HEAD" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\FETCH_HEAD", 
+            None, {TreeElementLabelFunction -> "FileSystem", 
+             ParentEdgeLabelFunction -> "FileSystem"}], "HEAD" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\HEAD", None, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "index" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\index", None, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "packed-refs" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\packed-refs", 
+            None, {TreeElementLabelFunction -> "FileSystem", 
+             ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "1-bluemarble_west.jpg" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\1-bluemarble_west.jpg", 
+         None, {TreeElementLabelFunction -> "FileSystem", 
+          ParentEdgeLabelFunction -> "FileSystem"}], 
+       "309_ImageWall5_768px-60.jpg" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\309_ImageWall5_768px-60.\
+jpg", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "786_1-bluemarble_west.jpg" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\786_1-bluemarble_west.\
+jpg", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "automating creating documents.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\automating creating \
+documents.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\\
+GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "Introduction, Measurement, Estimating.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Introduction, \
+Measurement, Estimating.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], 
+       "Physics-Principles with Applications author Douglas C. Giancoli 7th \
+Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter 1-Introduction, \
+Measurement, Estimating.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli 7th Edition Publisher Pearson ISBN-13 \
+978-0-321-62592-2 Chapter 1-Introduction, Measurement, Estimating.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], 
+       "Physics-Principles with Applications author Douglas C. Giancoli \
+Chapter 1-INTRODUCTION, MEASUREMENT, ESTIMATING.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli Chapter 1-INTRODUCTION, MEASUREMENT, \
+ESTIMATING.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], 
+       "Physics-Principles with Applications author Douglas C. Giancoli \
+Chapter 2-DESCRIBING MOTION- KINEMATICS IN ONE DIMENSION.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli Chapter 2-DESCRIBING MOTION- \
+KINEMATICS IN ONE DIMENSION.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], 
+       "Physics-Principles with Applications Douglas C. Giancoli 7th Edition \
+Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter 2-DESCRIBING MOTION- \
+KINEMATICS IN ONE DIMENSION.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications Douglas C. Giancoli 7th Edition Publisher Pearson ISBN-13 \
+978-0-321-62592-2 Chapter 2-DESCRIBING MOTION- KINEMATICS IN ONE \
+DIMENSION.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "README.md" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\README.md", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "test.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\test.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "The_Blue_Marble.jpg" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\The_Blue_Marble.jpg", 
+         None, {TreeElementLabelFunction -> "FileSystem", 
+          ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+      TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+       "FileSystem"}]]}, 
+    NamespaceBox[{
+      {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[0.019429957352442555`], 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         3.9149571235758907`, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         4.189690956809287, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         4.464424790042682, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         4.7391586232760785`, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         5.013892456509474, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         5.2886262897428695`, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         5.563360122976266, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         5.838093956209661, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         6.112827789443058, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         6.387561622676453, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{5.2886262897428695`, 1.9119721940526397`}, {
+         6.662295455909849, 1.5933101617105334`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         1.3736691661669793`, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         3.022072165567354, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         3.434172915417448, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         3.9836405818842398`, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         4.807842081584427, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         5.082575914817823, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         5.357309748051219, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         5.632043581284615, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         5.906777414518011, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         6.1815112477514065`, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9149571235758907`, 1.5933101617105334`}, {
+         6.456245080984802, 1.2746481293684266`}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {0., 
+         0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         0.27473383323339584`, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         0.5494676664667917, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         0.8242014997001875, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         1.0989353329335834`, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         1.3736691661669793`, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         1.648402999400375, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         1.923136832633771, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         2.1978706658671667`, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         2.4726044991005627`, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{1.3736691661669793`, 1.2746481293684266`}, {
+         2.7473383323339586`, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.022072165567354, 1.2746481293684266`}, {3.022072165567354,
+          0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.434172915417448, 1.2746481293684266`}, {3.29680599880075, 
+         0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.434172915417448, 1.2746481293684266`}, {3.571539832034146,
+          0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.29680599880075, 0.9559860970263199}, {3.1594390821840523`,
+          0.6373240646842133}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.29680599880075, 0.9559860970263199}, {3.434172915417448, 
+         0.6373240646842133}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.1594390821840523`, 0.6373240646842133}, {
+         3.1594390821840523`, 0.3186620323421065}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.434172915417448, 0.6373240646842133}, {3.434172915417448, 
+         0.3186620323421065}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.434172915417448, 0.3186620323421065}, {3.434172915417448, 
+         0.}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9836405818842398`, 1.2746481293684266`}, {
+         3.846273665267542, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{3.9836405818842398`, 1.2746481293684266`}, {
+         4.121007498500938, 0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{4.121007498500938, 0.9559860970263199}, {
+         3.9836405818842398`, 0.6373240646842133}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{4.121007498500938, 0.9559860970263199}, {4.258374415117635, 
+         0.6373240646842133}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{4.807842081584427, 1.2746481293684266`}, {4.533108248351032,
+          0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{4.807842081584427, 1.2746481293684266`}, {4.807842081584427,
+          0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{4.807842081584427, 1.2746481293684266`}, {5.082575914817823,
+          0.9559860970263199}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{4.533108248351032, 0.9559860970263199}, {4.533108248351032, 
+         0.6373240646842133}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{4.807842081584427, 0.9559860970263199}, {4.807842081584427, 
+         0.6373240646842133}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{4.807842081584427, 0.6373240646842133}, {4.807842081584427, 
+         0.3186620323421065}}]}}, 
+      {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"giancoli-physics-work\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {5.2886262897428695, 1.9119721940526397}],
+        "DynamicName",
+        BoxID -> "VertexID$1"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\".git\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.9149571235758907, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$2"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"hooks\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {1.3736691661669793, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$3"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"applypatch-msg.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\applypatch-msg.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\applypatch-\
+msg.sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {0., 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$4"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"commit-msg.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\commit-msg.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\commit-msg.\
+sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {0.27473383323339584, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$5"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"fsmonitor-watchman.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\fsmonitor-watchman.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\fsmonitor-\
+watchman.sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {0.5494676664667917, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$6"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"post-update.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\post-update.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\post-\
+update.sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {0.8242014997001875, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$7"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"pre-applypatch.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\pre-applypatch.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-\
+applypatch.sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.0989353329335834, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$8"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"pre-commit.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\pre-commit.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-commit.\
+sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.3736691661669793, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$9"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"pre-merge-commit.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\pre-merge-commit.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-merge-\
+commit.sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.648402999400375, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$10"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"prepare-commit-msg.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\prepare-commit-msg.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\prepare-\
+commit-msg.sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.923136832633771, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$11"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"pre-push.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\pre-push.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-push.\
+sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {2.1978706658671667, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$12"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"pre-rebase.sample\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\\\
+\\pre-rebase.sample\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\hooks\\pre-rebase.\
+sample", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {2.4726044991005627, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$13"], 
+       TagBox[InsetBox[
+         FrameBox["\<\"13 total\"\>",
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->Directive[
+            Directive[
+             RGBColor[
+             0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+             AbsoluteThickness[1], 
+             Opacity[1]], FontFamily -> "Roboto"],
+          FrameMargins->{{6, 6}, {1, 1}},
+          FrameStyle->Directive[
+            Dashing[{Tiny, Tiny}], 
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          RoundingRadius->10,
+          StripOnInput->False], {2.7473383323339586, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$14"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"info\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\info\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\info", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.022072165567354, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$15"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"exclude\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\info\\\\\
+exclude\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\info\\exclude", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {3.022072165567354, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$16"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"logs\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.434172915417448, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$17"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"refs\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\\\\\
+refs\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.29680599880075, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$18"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"heads\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\\\\\
+refs\\\\heads\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\\
+heads", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.1594390821840523, 0.6373240646842133}],
+        "DynamicName",
+        BoxID -> "VertexID$19"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"main\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\\\\\
+refs\\\\heads\\\\main\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\heads\
+\\main", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {3.1594390821840523, 0.3186620323421065}],
+        "DynamicName",
+        BoxID -> "VertexID$20"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"remotes\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\\\\\
+refs\\\\remotes\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\\
+remotes", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.434172915417448, 0.6373240646842133}],
+        "DynamicName",
+        BoxID -> "VertexID$21"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"origin\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\\\\\
+refs\\\\remotes\\\\origin\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\\
+remotes\\origin", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.434172915417448, 0.3186620323421065}],
+        "DynamicName",
+        BoxID -> "VertexID$22"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"HEAD\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\\\\\
+refs\\\\remotes\\\\origin\\\\HEAD\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\refs\\\
+remotes\\origin\\HEAD", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {3.434172915417448, 0.}],
+        "DynamicName",
+        BoxID -> "VertexID$23"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"HEAD\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\\\\\
+HEAD\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\logs\\HEAD", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {3.571539832034146, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$24"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"objects\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\objects\
+\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.9836405818842398, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$25"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"info\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\objects\
+\\\\info\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects\\info", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {3.846273665267542, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$26"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"pack\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\objects\
+\\\\pack\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects\\pack", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {4.121007498500938, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$27"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           
+           TooltipBox["\<\"pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.idx\"\
+\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\objects\
+\\\\pack\\\\pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.idx\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects\\pack\\\
+pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.idx", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {3.9836405818842398, 0.6373240646842133}],
+        "DynamicName",
+        BoxID -> "VertexID$28"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           
+           TooltipBox["\<\"pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.pack\
+\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\objects\
+\\\\pack\\\\pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.pack\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\objects\\pack\\\
+pack-2a97f8bc2f397e35e2e45e9f6458eca652655ad1.pack", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {4.258374415117635, 0.6373240646842133}],
+        "DynamicName",
+        BoxID -> "VertexID$29"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"refs\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\refs\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {4.807842081584427, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$30"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"heads\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\refs\\\\\
+heads\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\heads", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {4.533108248351032, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$31"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"main\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\refs\\\\\
+heads\\\\main\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\heads\\\
+main", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {4.533108248351032, 0.6373240646842133}],
+        "DynamicName",
+        BoxID -> "VertexID$32"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"remotes\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\refs\\\\\
+remotes\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\remotes", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {4.807842081584427, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$33"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"origin\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\refs\\\\\
+remotes\\\\origin\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\remotes\\\
+origin", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {4.807842081584427, 0.6373240646842133}],
+        "DynamicName",
+        BoxID -> "VertexID$34"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"HEAD\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\refs\\\\\
+remotes\\\\origin\\\\HEAD\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\remotes\\\
+origin\\HEAD", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {4.807842081584427, 0.3186620323421065}],
+        "DynamicName",
+        BoxID -> "VertexID$35"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"tags\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\refs\\\\\
+tags\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\refs\\tags", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {5.082575914817823, 0.9559860970263199}],
+        "DynamicName",
+        BoxID -> "VertexID$36"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"config\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\config\"\
+",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\config", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {5.082575914817823, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$37"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"description\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\\
+description\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\description", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {5.357309748051219, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$38"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"FETCH_HEAD\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\FETCH_\
+HEAD\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\FETCH_HEAD", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {5.632043581284615, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$39"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"HEAD\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\HEAD\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\HEAD", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {5.906777414518011, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$40"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"index\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\index\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\index", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {6.1815112477514065, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$41"], 
+       TagBox[InsetBox[
+         FrameBox["\<\"11 total\"\>",
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->Directive[
+            Directive[
+             RGBColor[
+             0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+             AbsoluteThickness[1], 
+             Opacity[1]], FontFamily -> "Roboto"],
+          FrameMargins->{{6, 6}, {1, 1}},
+          FrameStyle->Directive[
+            Dashing[{Tiny, Tiny}], 
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          RoundingRadius->10,
+          StripOnInput->False], {6.456245080984802, 1.2746481293684266}],
+        "DynamicName",
+        BoxID -> "VertexID$42"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"1-bluemarble_west.jpg\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\1-bluemarble_\
+west.jpg\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\1-bluemarble_west.jpg", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {4.189690956809287, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$43"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"309_ImageWall5_768px-60.jpg\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\309_ImageWall5_\
+768px-60.jpg\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\309_ImageWall5_768px-60.\
+jpg", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {4.464424790042682, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$44"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"786_1-bluemarble_west.jpg\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\786_1-\
+bluemarble_west.jpg\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\786_1-bluemarble_west.\
+jpg", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {4.7391586232760785, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$45"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"automating creating documents.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\automating \
+creating documents.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\automating creating \
+documents.nb", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {5.013892456509474, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$46"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\\
+GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\\
+GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {5.2886262897428695, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$47"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"Introduction, Measurement, Estimating.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Introduction, \
+Measurement, Estimating.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Introduction, \
+Measurement, Estimating.nb", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {5.563360122976266, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$48"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           
+           TooltipBox["\<\"Physics-Principles with Applications author \
+Douglas C. Giancoli 7th Edition Publisher Pearson ISBN-13 978-0-321-62592-2 \
+Chapter 1-Introduction, Measurement, Estimating.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli 7th Edition Publisher \
+Pearson ISBN-13 978-0-321-62592-2 Chapter 1-Introduction, Measurement, \
+Estimating.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli 7th Edition Publisher Pearson ISBN-13 \
+978-0-321-62592-2 Chapter 1-Introduction, Measurement, Estimating.nb", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {5.838093956209661, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$49"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           
+           TooltipBox["\<\"Physics-Principles with Applications author \
+Douglas C. Giancoli Chapter 1-INTRODUCTION, MEASUREMENT, ESTIMATING.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli Chapter \
+1-INTRODUCTION, MEASUREMENT, ESTIMATING.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli Chapter 1-INTRODUCTION, MEASUREMENT, \
+ESTIMATING.nb", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {6.112827789443058, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$50"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           
+           TooltipBox["\<\"Physics-Principles with Applications author \
+Douglas C. Giancoli Chapter 2-DESCRIBING MOTION- KINEMATICS IN ONE \
+DIMENSION.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli Chapter 2-DESCRIBING \
+MOTION- KINEMATICS IN ONE DIMENSION.nb\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli Chapter 2-DESCRIBING MOTION- \
+KINEMATICS IN ONE DIMENSION.nb", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {6.387561622676453, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$51"], 
+       TagBox[InsetBox[
+         FrameBox["\<\"14 total\"\>",
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->Directive[
+            Directive[
+             RGBColor[
+             0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+             AbsoluteThickness[1], 
+             Opacity[1]], FontFamily -> "Roboto"],
+          FrameMargins->{{6, 6}, {1, 1}},
+          FrameStyle->Directive[
+            Dashing[{Tiny, Tiny}], 
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          RoundingRadius->10,
+          StripOnInput->False], {6.662295455909849, 1.5933101617105334}],
+        "DynamicName",
+        BoxID -> "VertexID$52"]}}]]],
+  AlignmentPoint->Center,
+  Axes->False,
+  AxesLabel->None,
+  AxesOrigin->Automatic,
+  AxesStyle->{},
+  Background->None,
+  BaseStyle->{},
+  BaselinePosition->Automatic,
+  ContentSelectable->Automatic,
+  DefaultBaseStyle->"TreeGraphics",
+  Epilog->{},
+  FormatType->StandardForm,
+  Frame->False,
+  FrameLabel->FormBox["False", StandardForm],
+  FrameStyle->{},
+  FrameTicks->None,
+  FrameTicksStyle->{},
+  GridLines->None,
+  GridLinesStyle->{},
+  ImageMargins->0.,
+  ImagePadding->All,
+  ImageSize->{Automatic, 349.27675710797496`},
+  LabelStyle->{},
+  PlotLabel->None,
+  PlotRange->All,
+  PlotRangeClipping->False,
+  PlotRangePadding->Automatic,
+  PlotRegion->Automatic,
+  Prolog->{},
+  RotateLabel->True,
+  Ticks->Automatic,
+  TicksStyle->{}]], "Output",
+ CellChangeTimes->{{3.881609796635433*^9, 3.881609817240865*^9}},
+ CellLabel->"Out[26]=",ExpressionUUID->"aaf12ba8-b472-435a-baec-49e22fe8d6b2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileSystemTree", "[", 
+  RowBox[{
+   RowBox[{"Directory", "[", "]"}], ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8816098308512645`*^9, 3.8816098512354403`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"ebdcb9ae-02ea-4116-9f6e-ce364830a49d"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["Trees",
+   DynamicModuleBox[{Typeset`tree = HoldComplete[
+     Tree[
+     "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work", <|
+      ".git" -> Tree[
+        "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git", <|
+         "config" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\config", None, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "description" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\description", 
+            None, {TreeElementLabelFunction -> "FileSystem", 
+             ParentEdgeLabelFunction -> "FileSystem"}], "FETCH_HEAD" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\FETCH_HEAD", 
+            None, {TreeElementLabelFunction -> "FileSystem", 
+             ParentEdgeLabelFunction -> "FileSystem"}], "HEAD" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\HEAD", None, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "index" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\index", None, {
+            TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+             "FileSystem"}], "packed-refs" -> 
+          Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\packed-refs", 
+            None, {TreeElementLabelFunction -> "FileSystem", 
+             ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "1-bluemarble_west.jpg" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\1-bluemarble_west.jpg", 
+         None, {TreeElementLabelFunction -> "FileSystem", 
+          ParentEdgeLabelFunction -> "FileSystem"}], 
+       "309_ImageWall5_768px-60.jpg" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\309_ImageWall5_768px-60.\
+jpg", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "786_1-bluemarble_west.jpg" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\786_1-bluemarble_west.\
+jpg", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "automating creating documents.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\automating creating \
+documents.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\\
+GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "Introduction, Measurement, Estimating.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Introduction, \
+Measurement, Estimating.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], 
+       "Physics-Principles with Applications author Douglas C. Giancoli 7th \
+Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter 1-Introduction, \
+Measurement, Estimating.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli 7th Edition Publisher Pearson ISBN-13 \
+978-0-321-62592-2 Chapter 1-Introduction, Measurement, Estimating.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], 
+       "Physics-Principles with Applications author Douglas C. Giancoli \
+Chapter 1-INTRODUCTION, MEASUREMENT, ESTIMATING.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli Chapter 1-INTRODUCTION, MEASUREMENT, \
+ESTIMATING.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], 
+       "Physics-Principles with Applications author Douglas C. Giancoli \
+Chapter 2-DESCRIBING MOTION- KINEMATICS IN ONE DIMENSION.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli Chapter 2-DESCRIBING MOTION- \
+KINEMATICS IN ONE DIMENSION.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], 
+       "Physics-Principles with Applications Douglas C. Giancoli 7th Edition \
+Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter 2-DESCRIBING MOTION- \
+KINEMATICS IN ONE DIMENSION.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications Douglas C. Giancoli 7th Edition Publisher Pearson ISBN-13 \
+978-0-321-62592-2 Chapter 2-DESCRIBING MOTION- KINEMATICS IN ONE \
+DIMENSION.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "README.md" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\README.md", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "test.nb" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\test.nb", None, {
+         TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+          "FileSystem"}], "The_Blue_Marble.jpg" -> 
+       Tree["C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\The_Blue_Marble.jpg", 
+         None, {TreeElementLabelFunction -> "FileSystem", 
+          ParentEdgeLabelFunction -> "FileSystem"}]|>, {
+      TreeElementLabelFunction -> "FileSystem", ParentEdgeLabelFunction -> 
+       "FileSystem"}]]}, 
+    NamespaceBox[{
+      {Hue[0.6, 0.7, 0.5], Opacity[0.7], Arrowheads[Medium], 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         0.8574929257125441, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         1.2004900959975617`, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         1.5434872662825794`, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         1.8864844365675972`, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         2.2294816068526147`, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         2.5724787771376323`, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         2.91547594742265, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         3.2584731177076676`, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         3.601470287992685, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         3.9444674582777033`, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{2.5724787771376323`, 1.0718661571406802`}, {
+         4.287464628562721, 0.5359330785703401}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{0.8574929257125441, 0.5359330785703401}, {0., 0.}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{0.8574929257125441, 0.5359330785703401}, {
+         0.34299717028501764`, 0.}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{0.8574929257125441, 0.5359330785703401}, {
+         0.6859943405700353, 0.}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{0.8574929257125441, 0.5359330785703401}, {1.028991510855053,
+          0.}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{0.8574929257125441, 0.5359330785703401}, {
+         1.3719886811400706`, 0.}}]}, 
+       {RGBColor[0.6, 0.5882352941176471, 0.5529411764705883], 
+        AbsoluteThickness[1], 
+        LineBox[{{0.8574929257125441, 0.5359330785703401}, {
+         1.7149858514250882`, 0.}}]}}, 
+      {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"giancoli-physics-work\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {2.5724787771376323, 1.0718661571406802}],
+        "DynamicName",
+        BoxID -> "VertexID$1"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\".git\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->4,
+          StripOnInput->False], {0.8574929257125441, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$2"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"config\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\config\"\
+",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\config", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {0., 0.}],
+        "DynamicName",
+        BoxID -> "VertexID$3"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"description\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\\
+description\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\description", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {0.34299717028501764, 0.}],
+        "DynamicName",
+        BoxID -> "VertexID$4"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"FETCH_HEAD\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\FETCH_\
+HEAD\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\FETCH_HEAD", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {0.6859943405700353, 0.}],
+        "DynamicName",
+        BoxID -> "VertexID$5"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"HEAD\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\HEAD\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\HEAD", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.028991510855053, 0.}],
+        "DynamicName",
+        BoxID -> "VertexID$6"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"index\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\index\"",
+            TooltipStyle->"TextStyling"],
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\index", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.3719886811400706, 0.}],
+        "DynamicName",
+        BoxID -> "VertexID$7"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"packed-refs\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\packed-\
+refs\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\.git\\packed-refs", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.7149858514250882, 0.}],
+        "DynamicName",
+        BoxID -> "VertexID$8"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"1-bluemarble_west.jpg\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\1-bluemarble_\
+west.jpg\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\1-bluemarble_west.jpg", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.2004900959975617, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$9"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"309_ImageWall5_768px-60.jpg\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\309_ImageWall5_\
+768px-60.jpg\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\309_ImageWall5_768px-60.\
+jpg", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.5434872662825794, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$10"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"786_1-bluemarble_west.jpg\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\786_1-\
+bluemarble_west.jpg\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\786_1-bluemarble_west.\
+jpg", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {1.8864844365675972, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$11"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"automating creating documents.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\automating \
+creating documents.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\automating creating \
+documents.nb", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {2.2294816068526147, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$12"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\\
+GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\\
+GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {2.5724787771376323, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$13"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           TooltipBox["\<\"Introduction, Measurement, Estimating.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Introduction, \
+Measurement, Estimating.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Introduction, \
+Measurement, Estimating.nb", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {2.91547594742265, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$14"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           
+           TooltipBox["\<\"Physics-Principles with Applications author \
+Douglas C. Giancoli 7th Edition Publisher Pearson ISBN-13 978-0-321-62592-2 \
+Chapter 1-Introduction, Measurement, Estimating.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli 7th Edition Publisher \
+Pearson ISBN-13 978-0-321-62592-2 Chapter 1-Introduction, Measurement, \
+Estimating.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli 7th Edition Publisher Pearson ISBN-13 \
+978-0-321-62592-2 Chapter 1-Introduction, Measurement, Estimating.nb", 
+            "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {3.2584731177076676, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$15"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           
+           TooltipBox["\<\"Physics-Principles with Applications author \
+Douglas C. Giancoli Chapter 1-INTRODUCTION, MEASUREMENT, ESTIMATING.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli Chapter \
+1-INTRODUCTION, MEASUREMENT, ESTIMATING.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli Chapter 1-INTRODUCTION, MEASUREMENT, \
+ESTIMATING.nb", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {3.601470287992685, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$16"], 
+       TagBox[InsetBox[
+         FrameBox[
+          TagBox[
+           
+           TooltipBox["\<\"Physics-Principles with Applications author \
+Douglas C. Giancoli Chapter 2-DESCRIBING MOTION- KINEMATICS IN ONE \
+DIMENSION.nb\"\>",
+            
+            "\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli Chapter 2-DESCRIBING \
+MOTION- KINEMATICS IN ONE DIMENSION.nb\"",
+            TooltipStyle->"TextStyling"],
+           
+           Annotation[#, 
+            "C:\\Users\\Peter\\OneDrive - Marshall \
+University\\Documents\\GitHub\\giancoli-physics-work\\Physics-Principles with \
+Applications author Douglas C. Giancoli Chapter 2-DESCRIBING MOTION- \
+KINEMATICS IN ONE DIMENSION.nb", "Tooltip"]& ],
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->GrayLevel[0],
+          FrameMargins->{{2, 2}, {1, 1}},
+          FrameStyle->Directive[
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          ImageSize->Automatic,
+          RoundingRadius->0,
+          StripOnInput->False], {3.9444674582777033, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$17"], 
+       TagBox[InsetBox[
+         FrameBox["\<\"14 total\"\>",
+          Background->Directive[
+            RGBColor[
+            0.9607843137254902, 0.9882352941176471, 0.9764705882352941]],
+          BaseStyle->Directive[
+            Directive[
+             RGBColor[
+             0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+             AbsoluteThickness[1], 
+             Opacity[1]], FontFamily -> "Roboto"],
+          FrameMargins->{{6, 6}, {1, 1}},
+          FrameStyle->Directive[
+            Dashing[{Tiny, Tiny}], 
+            RGBColor[
+            0.4196078431372549, 0.6313725490196078, 0.4196078431372549], 
+            AbsoluteThickness[1], 
+            Opacity[1]],
+          RoundingRadius->10,
+          StripOnInput->False], {4.287464628562721, 0.5359330785703401}],
+        "DynamicName",
+        BoxID -> "VertexID$18"]}}]]],
+  AlignmentPoint->Center,
+  Axes->False,
+  AxesLabel->None,
+  AxesOrigin->Automatic,
+  AxesStyle->{},
+  Background->None,
+  BaseStyle->{},
+  BaselinePosition->Automatic,
+  ContentSelectable->Automatic,
+  DefaultBaseStyle->"TreeGraphics",
+  Epilog->{},
+  FormatType->StandardForm,
+  Frame->False,
+  FrameLabel->FormBox["False", StandardForm],
+  FrameStyle->{},
+  FrameTicks->None,
+  FrameTicksStyle->{},
+  GridLines->None,
+  GridLinesStyle->{},
+  ImageMargins->0.,
+  ImagePadding->All,
+  ImageSize->{Automatic, 403.366917293233},
+  LabelStyle->{},
+  PlotLabel->None,
+  PlotRange->All,
+  PlotRangeClipping->False,
+  PlotRangePadding->Automatic,
+  PlotRegion->Automatic,
+  Prolog->{},
+  RotateLabel->True,
+  Ticks->Automatic,
+  TicksStyle->{}]], "Output",
+ CellChangeTimes->{3.881609851813588*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"7f4d2160-8f1d-419e-b071-15a64d8a969c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileNames", "[", 
+  RowBox[{"All", ",", 
+   RowBox[{"Directory", "[", "]"}], ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.881609862615641*^9, 3.88160988211722*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"54efb201-071e-42a2-83e1-8f9096280c62"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\1-bluemarble_\
+west.jpg\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\309_ImageWall5_\
+768px-60.jpg\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\786_1-\
+bluemarble_west.jpg\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\automating \
+creating documents.nb\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\config\"\
+\>", ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\\
+description\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\FETCH_\
+HEAD\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\HEAD\"\>\
+", ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\hooks\"\
+\>", ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\index\"\
+\>", ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\info\"\>\
+", ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\logs\"\>\
+", ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\objects\
+\"\>", ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\packed-\
+refs\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\.git\\\\refs\"\>\
+", ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\\
+GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024.webp\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Introduction, \
+Measurement, Estimating.nb\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli 7th Edition Publisher \
+Pearson ISBN-13 978-0-321-62592-2 Chapter 1-Introduction, Measurement, \
+Estimating.nb\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli Chapter \
+1-INTRODUCTION, MEASUREMENT, ESTIMATING.nb\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications author Douglas C. Giancoli Chapter 2-DESCRIBING \
+MOTION- KINEMATICS IN ONE DIMENSION.nb\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications Douglas C. Giancoli 7th Edition Publisher \
+Pearson ISBN-13 978-0-321-62592-2 Chapter 2-DESCRIBING MOTION- KINEMATICS IN \
+ONE DIMENSION.nb\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\README.md\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\test.nb\"\>", 
+   ",", "\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\The_Blue_Marble.\
+jpg\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.881609882492219*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"fededd42-cd16-4f5c-bce8-6c6886b3bf66"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileBaseName", "/@", 
+  RowBox[{
+   RowBox[{"ReverseSortBy", "[", "FileDate", "]"}], "[", 
+   RowBox[{"FileNames", "[", 
+    RowBox[{"All", ",", 
+     RowBox[{"Directory", "[", "]"}], ",", "2"}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.881609887679675*^9, 3.881609904434434*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"0eb26c4c-26cf-482e-9c87-d34968a94ff5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Physics-Principles with Applications Douglas C. Giancoli 7th \
+Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter 2-DESCRIBING \
+MOTION- KINEMATICS IN ONE DIMENSION\"\>", 
+   ",", "\<\"Physics-Principles with Applications author Douglas C. Giancoli \
+Chapter 2-DESCRIBING MOTION- KINEMATICS IN ONE DIMENSION\"\>", 
+   ",", "\<\"Physics-Principles with Applications author Douglas C. Giancoli \
+Chapter 1-INTRODUCTION, MEASUREMENT, ESTIMATING\"\>", ",", "\<\"test\"\>", 
+   ",", "\<\"Physics-Principles with Applications author Douglas C. Giancoli \
+7th Edition Publisher Pearson ISBN-13 978-0-321-62592-2 Chapter \
+1-Introduction, Measurement, Estimating\"\>", ",", "\<\"objects\"\>", 
+   ",", "\<\"FETCH_HEAD\"\>", ",", "\<\"automating creating documents\"\>", 
+   ",", "\<\".git\"\>", ",", "\<\"config\"\>", ",", "\<\"The_Blue_Marble\"\>",
+    ",", "\<\"README\"\>", 
+   ",", "\<\"Introduction, Measurement, Estimating\"\>", 
+   ",", "\<\"GMY7X5OKPSBGSTSFEZXDEYW6JU-1024x1024\"\>", ",", "\<\"refs\"\>", 
+   ",", "\<\"packed-refs\"\>", ",", "\<\"logs\"\>", ",", "\<\"index\"\>", 
+   ",", "\<\"HEAD\"\>", ",", "\<\"786_1-bluemarble_west\"\>", 
+   ",", "\<\"309_ImageWall5_768px-60\"\>", ",", "\<\"1-bluemarble_west\"\>", 
+   ",", "\<\"info\"\>", ",", "\<\"hooks\"\>", ",", "\<\"description\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.881609891742211*^9, 3.8816099048563213`*^9}},
+ CellLabel->"Out[31]=",ExpressionUUID->"91e5f990-864e-46f7-af4e-34ceaca1236e"]
+}, Open  ]],
+
+Cell[BoxData["Close"], "Input",
+ CellChangeTimes->{{3.881610275271471*^9, 
+  3.8816102758808374`*^9}},ExpressionUUID->"a82ae508-1e9f-4858-af07-\
+0ceeefd9ae18"]
+},
+WindowSize->{1152., 615.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"50cbd90e-2a13-4348-92d9-b8819893bc7c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1842, 40, 162, "Input",ExpressionUUID->"fa6b51d1-d42b-4364-9f37-3901d09a20ac"],
+Cell[2403, 62, 303, 5, 28, "Input",ExpressionUUID->"378a6916-a53a-4578-89ee-cda182dfc878"],
+Cell[2709, 69, 313, 6, 28, "Input",ExpressionUUID->"30995050-e126-4328-b9d1-1836594554c0"],
+Cell[3025, 77, 354, 6, 28, "Input",ExpressionUUID->"e06d8cf4-f2d9-4499-a20e-9ba1553d3151"],
+Cell[CellGroupData[{
+Cell[3404, 87, 1934, 37, 162, "Input",ExpressionUUID->"e944be86-c739-4fbe-8884-b6335d201b64"],
+Cell[5341, 126, 1847, 35, 109, "Output",ExpressionUUID->"5d04be85-263e-444f-8d48-7ec0aadba756"]
+}, Open  ]],
+Cell[7203, 164, 1262, 31, 124, "Input",ExpressionUUID->"5e4d81fc-babd-4856-99f0-383e4860f97f"],
+Cell[8468, 197, 687, 17, 48, "Input",ExpressionUUID->"656f56f6-9006-4fd7-892e-63d5738f7cca"],
+Cell[CellGroupData[{
+Cell[9180, 218, 600, 15, 86, "Input",ExpressionUUID->"a8dfded8-eeb0-482f-a4c9-a95b71aea581"],
+Cell[9783, 235, 339, 4, 52, "Output",ExpressionUUID->"9830b5e0-77a6-48ab-8893-f245314017a1"]
+}, Open  ]],
+Cell[10137, 242, 1251, 29, 105, "Input",ExpressionUUID->"ab0a5bc6-9575-4937-b1bc-fd5ee4ba349d"],
+Cell[11391, 273, 233, 4, 28, "Input",ExpressionUUID->"840897a7-4390-4e53-a066-7271c945baf9"],
+Cell[11627, 279, 245, 5, 28, "Input",ExpressionUUID->"f3205d6a-1b34-4b52-8f7c-5a742a221ea9"],
+Cell[11875, 286, 1417, 32, 162, "Input",ExpressionUUID->"44b9f039-a658-44cd-8fe8-f56dbd224d60"],
+Cell[13295, 320, 245, 5, 28, "Input",ExpressionUUID->"86232ace-92c1-4165-b4bb-b985aa596e78"],
+Cell[CellGroupData[{
+Cell[13565, 329, 329, 6, 28, "Input",ExpressionUUID->"3fa2ecd6-5339-4024-9284-0327b10d9d59"],
+Cell[13897, 337, 262, 3, 32, "Output",ExpressionUUID->"0349d4b7-6ab3-4c7c-8ca2-8095f4dea2c7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14196, 345, 298, 5, 28, "Input",ExpressionUUID->"2455e136-f4aa-4397-9548-9c424675abad"],
+Cell[14497, 352, 87045, 2036, 366, "Output",ExpressionUUID->"aaf12ba8-b472-435a-baec-49e22fe8d6b2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[101579, 2393, 271, 5, 28, "Input",ExpressionUUID->"ebdcb9ae-02ea-4116-9f6e-ce364830a49d"],
+Cell[101853, 2400, 31766, 743, 420, "Output",ExpressionUUID->"7f4d2160-8f1d-419e-b071-15a64d8a969c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[133656, 3148, 273, 5, 28, "Input",ExpressionUUID->"54efb201-071e-42a2-83e1-8f9096280c62"],
+Cell[133932, 3155, 4382, 73, 565, "Output",ExpressionUUID->"fededd42-cd16-4f5c-bce8-6c6886b3bf66"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[138351, 3233, 390, 8, 28, "Input",ExpressionUUID->"0eb26c4c-26cf-482e-9c87-d34968a94ff5"],
+Cell[138744, 3243, 1518, 23, 185, "Output",ExpressionUUID->"91e5f990-864e-46f7-af4e-34ceaca1236e"]
+}, Open  ]],
+Cell[140277, 3269, 159, 3, 28, "Input",ExpressionUUID->"a82ae508-1e9f-4858-af07-0ceeefd9ae18"]
+}
+]
+*)
+
