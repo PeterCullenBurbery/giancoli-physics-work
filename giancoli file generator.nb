@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    143776,       3338]
-NotebookOptionsPosition[    140668,       3282]
-NotebookOutlinePosition[    141073,       3298]
-CellTagsIndexPosition[    141030,       3295]
+NotebookDataLength[    148536,       3467]
+NotebookOptionsPosition[    144119,       3382]
+NotebookOutlinePosition[    144524,       3398]
+CellTagsIndexPosition[    144481,       3395]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3278,7 +3278,107 @@ Chapter 1-INTRODUCTION, MEASUREMENT, ESTIMATING\"\>", ",", "\<\"test\"\>",
 Cell[BoxData["Close"], "Input",
  CellChangeTimes->{{3.881610275271471*^9, 
   3.8816102758808374`*^9}},ExpressionUUID->"a82ae508-1e9f-4858-af07-\
-0ceeefd9ae18"]
+0ceeefd9ae18"],
+
+Cell[CellGroupData[{
+
+Cell["Automatically naming the titles", "Section",
+ CellChangeTimes->{{3.8816107653818555`*^9, 
+  3.8816107708037663`*^9}},ExpressionUUID->"66fe914e-a86f-4e4b-b4a5-\
+23f52d72159a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NotebookFileName", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.88161069033524*^9, 3.8816106934915075`*^9}},
+ CellLabel->"In[52]:=",
+ CellID->288605815,ExpressionUUID->"7e3a8d1c-eb4a-4ae3-85de-54e307f24257"],
+
+Cell[BoxData["\<\"C:\\\\Users\\\\Peter\\\\OneDrive - Marshall \
+University\\\\Documents\\\\GitHub\\\\giancoli-physics-work\\\\Physics-\
+Principles with Applications Douglas C. Giancoli 7th Edition Publisher \
+Pearson ISBN-13 978-0-321-62592-2 Chapter 5-CIRCULAR \
+MOTION\[LongDash]GRAVITATION.nb\"\>"], "Output",
+ CellChangeTimes->{3.8816106938237305`*^9},
+ CellLabel->"Out[52]=",
+ CellID->213280067,ExpressionUUID->"7676f158-634d-4ce9-8fa2-fb5bf8c6ee5a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"\"\<Chapter \>\"", "~~", "___"}], "]"}], "[", 
+  RowBox[{"NotebookFileName", "[", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8816106980893908`*^9, 3.88161071496518*^9}},
+ CellLabel->"In[53]:=",
+ CellID->392534916,ExpressionUUID->"0806d88f-6f13-4771-be28-e5bdb73b8443"],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"Chapter 5-CIRCULAR MOTION\[LongDash]GRAVITATION.nb\"\>", 
+  "}"}]], "Output",
+ CellChangeTimes->{3.8816107152776914`*^9},
+ CellLabel->"Out[53]=",
+ CellID->78771056,ExpressionUUID->"97d3af68-7d3d-4206-a816-a758b4c2da23"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"First", "[", 
+  RowBox[{
+   RowBox[{"StringCases", "[", 
+    RowBox[{"\"\<Chapter \>\"", "~~", "___"}], "]"}], "[", 
+   RowBox[{"NotebookFileName", "[", "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8816107166526957`*^9, 3.88161071787146*^9}},
+ CellLabel->"In[54]:=",
+ CellID->79936040,ExpressionUUID->"a3e18823-ed18-43c6-bb46-b6807f8c1b3d"],
+
+Cell[BoxData["\<\"Chapter 5-CIRCULAR MOTION\[LongDash]GRAVITATION.nb\"\>"], \
+"Output",
+ CellChangeTimes->{3.881610718199603*^9},
+ CellLabel->"Out[54]=",
+ CellID->100999564,ExpressionUUID->"a6732c51-3f01-4bca-b769-1d370204e2a0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringDrop", "[", 
+  RowBox[{
+   RowBox[{"First", "[", 
+    RowBox[{
+     RowBox[{"StringCases", "[", 
+      RowBox[{"\"\<Chapter \>\"", "~~", "___"}], "]"}], "[", 
+     RowBox[{"NotebookFileName", "[", "]"}], "]"}], "]"}], ",", 
+   RowBox[{"-", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8816107192777166`*^9, 3.881610732715349*^9}},
+ CellLabel->"In[56]:=",
+ CellID->396319071,ExpressionUUID->"d49af376-add3-400b-9060-22210be61461"],
+
+Cell[BoxData["\<\"Chapter 5-CIRCULAR MOTION\[LongDash]GRAVITATION\"\>"], \
+"Output",
+ CellChangeTimes->{3.8816107331059446`*^9},
+ CellLabel->"Out[56]=",
+ CellID->285676189,ExpressionUUID->"f91c005c-acbf-4d63-aaa8-a3ee489ea575"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{"StringDrop", "[", 
+   RowBox[{
+    RowBox[{"First", "[", 
+     RowBox[{
+      RowBox[{"StringCases", "[", 
+       RowBox[{"\"\<Chapter \>\"", "~~", "___"}], "]"}], "[", 
+      RowBox[{"NotebookFileName", "[", "]"}], "]"}], "]"}], ",", 
+    RowBox[{"-", "3"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.881610734193943*^9, 3.881610736272089*^9}},
+ CellLabel->"In[57]:=",
+ CellID->8307198,ExpressionUUID->"efc5cb80-d465-47c7-b6a1-2af9aa1ddbd3"]
+}, Open  ]]
 },
 WindowSize->{1141.2, 604.8},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -3339,7 +3439,36 @@ Cell[CellGroupData[{
 Cell[138579, 3241, 390, 8, 28, "Input",ExpressionUUID->"0eb26c4c-26cf-482e-9c87-d34968a94ff5"],
 Cell[138972, 3251, 1518, 23, 185, "Output",ExpressionUUID->"91e5f990-864e-46f7-af4e-34ceaca1236e"]
 }, Open  ]],
-Cell[140505, 3277, 159, 3, 28, "Input",ExpressionUUID->"a82ae508-1e9f-4858-af07-0ceeefd9ae18"]
+Cell[140505, 3277, 159, 3, 28, "Input",ExpressionUUID->"a82ae508-1e9f-4858-af07-0ceeefd9ae18"],
+Cell[CellGroupData[{
+Cell[140689, 3284, 180, 3, 67, "Section",ExpressionUUID->"66fe914e-a86f-4e4b-b4a5-23f52d72159a"],
+Cell[CellGroupData[{
+Cell[140894, 3291, 230, 4, 28, "Input",ExpressionUUID->"7e3a8d1c-eb4a-4ae3-85de-54e307f24257",
+ CellID->288605815],
+Cell[141127, 3297, 455, 7, 52, "Output",ExpressionUUID->"7676f158-634d-4ce9-8fa2-fb5bf8c6ee5a",
+ CellID->213280067]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[141619, 3309, 338, 7, 28, "Input",ExpressionUUID->"0806d88f-6f13-4771-be28-e5bdb73b8443",
+ CellID->392534916],
+Cell[141960, 3318, 252, 5, 32, "Output",ExpressionUUID->"97d3af68-7d3d-4206-a816-a758b4c2da23",
+ CellID->78771056]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[142249, 3328, 372, 8, 28, "Input",ExpressionUUID->"a3e18823-ed18-43c6-bb46-b6807f8c1b3d",
+ CellID->79936040],
+Cell[142624, 3338, 228, 4, 32, "Output",ExpressionUUID->"a6732c51-3f01-4bca-b769-1d370204e2a0",
+ CellID->100999564]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[142889, 3347, 462, 11, 28, "Input",ExpressionUUID->"d49af376-add3-400b-9060-22210be61461",
+ CellID->396319071],
+Cell[143354, 3360, 227, 4, 32, "Output",ExpressionUUID->"f91c005c-acbf-4d63-aaa8-a3ee489ea575",
+ CellID->285676189]
+}, Open  ]],
+Cell[143596, 3367, 507, 12, 28, "Input",ExpressionUUID->"efc5cb80-d465-47c7-b6a1-2af9aa1ddbd3",
+ CellID->8307198]
+}, Open  ]]
 }
 ]
 *)
